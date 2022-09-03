@@ -22,19 +22,27 @@
     justify-content: right;
     gap: 10px;
 }
-h2{
-    color: var(--color-text);
-    padding: 0px 50px;
-}
+
 h1{
     font-size: 56px;
     color: white;
 }
+h2{
+    color: var(--color-text);
+    padding: 0px 50px;
+}
+h3{
+    color: white;
+    font-weight: 500;
+}
+p{
+    font-size: 16px;
+}
 .tab{
-    border: 1px solid rgba(255, 255, 255, 0.711);
+    border: 0.1px solid rgba(255, 255, 255, 0.711);
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: #2479d346;
+    background-color: #2479d322;
     width: 80%;
 }
 
