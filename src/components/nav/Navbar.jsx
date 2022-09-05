@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-scroll'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -13,32 +14,56 @@ const Navbar = () => {
             <div className="nav-left">Izzy-Dev</div>
             <div className="nav-right nav-large">
                 <ul>
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>Project</li>
-                    <li>Service</li>
-                    <li>Contact</li>
+                    <li>
+                        <Link to='home' smooth={true} duration={1200}>
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='about' smooth={true} duration={1200} offset={-70}>
+                            About Me
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='project' smooth={true} duration={1200} offset={-70}>
+                            Project
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='service' smooth={true} duration={1200} offset={-70}>
+                            Service
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='contact' smooth={true} duration={1200} offset={-70}>
+                            Contact
+                        </Link>
+                    </li>
                 </ul>
             </div>
 
             {/* Media Query Hambuger Menu */}
+            <div className="menu-bar" onClick={() => setToggle(prevToggle => !prevToggle)}>
+                <div className="line line1"></div>
+                <div className="line line2"></div>
+                <div className="line line3"></div>
+            </div>
+        </div>
             <div className="nav-small">
-                <div className="menu-bar" onClick={() => setToggle(prevToggle => !prevToggle)}>
-                    <div className="line line1"></div>
-                    <div className="line line2"></div>
-                    <div className="line line3"></div>
-                </div>
                 <div className={toggle ? 'active' : 'menu-list'}>
                     <ul>
-                        <li>Home</li>
+                        <li onClick={setToggle => }>
+                            <Link to='home'  smooth={true} duration={1200}>
+                                Home
+                            </Link>
+                        </li>
                         <li>About Me</li>
                         <li>Project</li>
-                        <li>Service</li>
+                        {/* <li>Service</li> */}
                         <li>Contact</li>
                     </ul>
                 </div>
             </div>
-        </div>
 
 
     </div>

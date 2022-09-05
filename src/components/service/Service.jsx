@@ -4,7 +4,7 @@ import teamwork from '../../assets/teamwork.svg'
 
 const Service = () => {
   return (
-    <div className='service'>
+    <div className='service' id='service'>
         <h2>My Service</h2>
       <div className="service-container">
         <div className="service-left">
@@ -14,17 +14,16 @@ const Service = () => {
         <div className="service-right">
           <div className="tab">
             <h3>Developer Skill</h3>
-            <p>I create beautiful iterfaces with simple HTML, CSS, & JavaScript and also frameworks like Angular and ReactJS</p>
+            <p>I create beautiful iterfaces with simple HTML, CSS, & JavaScript and also frameworks like Angular and ReactJS.</p>
           </div>
           <div className="tab">
-            <h3>Developer Skill</h3>
-            <p>I create beautiful iterfaces with simple HTML, CSS, & JavaScript and also frameworks like Angular and ReactJS</p>
+            <h3>Blockchain Development</h3>
+            <p>I create decentralized application and write smart contract with solidty and read data from the smart contarct using ethers.js.</p>
           </div>
           <div className="tab">
-            <h3>Developer Skill</h3>
-            <p>I create beautiful iterfaces with simple HTML, CSS, & JavaScript and also frameworks like Angular and ReactJS</p>
+            <h3>Version Control</h3>
+            <p>I can use version control systems well, and Git & Mecurial are my go-to tool.</p>
           </div>
-          
         </div>
       </div>
     </div>

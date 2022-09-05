@@ -1,24 +1,39 @@
+.home{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
 .home-container{
-    padding: 0px 100px;
+    padding: 0px 50px;
+    /* background-color: #0a192f; */
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 1200px;
     gap: 20px;
-    padding-top: 100px;
+    /* padding-top: -600px; */
 }
 
 .home-name h1{
     font-size: 60px;
-    font-weight: 400;
-    color: white;
+    font-weight: 600;
+    /* color: white; */
+    color: #ccd6f6;
+}
+.home-name h1 span{
+    font-size: 40px;
+    color: #81afdd;
 }
 
 p{
     font-size: 18px;
     font-weight: 300;
+    color: var(--color-text);
 }
 
-button{
+.home-name button{
     background-color: transparent;
     color: inherit;
     border: none;
@@ -30,10 +45,31 @@ button{
     gap: 20px;
 }
 
+.goto{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.home-name button:hover .icon-arrow{
+    /* background: linear-gradient(90deg, transparent,  ); */
+    /* background-size: 200% 200%; */
+    /* animation: gradent  1s ease; */
+    color: black;
+    background-color: white;
+    transform: rotate(90deg);
+}
+
 .icon-arrow{
     border: 1px solid white;
     padding: 10px;
     border-radius: 50%;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+.go-to{
+    cursor: pointer;
 }
 
 .home-right{
@@ -63,6 +99,11 @@ button{
 @media screen and (max-width: 500px) {
     .home-container{
         padding: 0px 20px;
+        height: 100vh !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
     }
     .home-name h1{
         font-size: 40px;
