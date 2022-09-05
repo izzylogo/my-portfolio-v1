@@ -52,15 +52,31 @@ const Navbar = () => {
             <div className="nav-small">
                 <div className={toggle ? 'active' : 'menu-list'}>
                     <ul>
-                        <li>
-                            <Link to='home'  smooth={true} duration={1200}>
+                        <li >
+                            <Link onClick={() => setToggle(prevToggle => !prevToggle)} to='home'  smooth={true} duration={1200}>
                                 Home
                             </Link>
                         </li>
-                        <li>About Me</li>
-                        <li>Project</li>
-                        {/* <li>Service</li> */}
-                        <li>Contact</li>
+                        <li>
+                            <Link onClick={() => setToggle(prevToggle => !prevToggle)} to='about'  smooth={true} duration={1200}>
+                                About Me
+                            </Link>
+                        </li>
+                        <li>
+                            <Link onClick={() => setToggle(prevToggle => !prevToggle)} to='project'  smooth={true} duration={1200}>
+                                Project
+                            </Link>
+                        </li>
+                        <li>
+                            <Link onClick={() => setToggle(prevToggle => !prevToggle)} to='service'  smooth={true} duration={1200}>
+                                Services
+                            </Link>
+                        </li>
+                        <li>
+                        <Link onClick={() => setToggle(prevToggle => !prevToggle)} to='contact'  smooth={true} duration={1200}>
+                                Contact
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -52,7 +52,7 @@ ul li{
 .menu-list{
     position: absolute;
     /* position: fixed; */
-    top: -210px;
+    top: -270px;
     text-align: right;
     width: 100vw;
     animation: untoggle 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -100,7 +100,7 @@ ul li{
 @keyframes toggle {
     
     from{
-        top: -210px;
+        top: -270px;
     }
     to{
         top: 50px;
@@ -112,7 +112,7 @@ ul li{
         top: 50px;
     }
     to{
-        top: -210px;
+        top: -270px;
     }
 }
 
