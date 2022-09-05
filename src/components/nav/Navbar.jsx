@@ -52,7 +52,7 @@ const Navbar = () => {
             <div className="nav-small">
                 <div className={toggle ? 'active' : 'menu-list'}>
                     <ul>
-                        <li onClick={setToggle => }>
+                        <li>
                             <Link to='home'  smooth={true} duration={1200}>
                                 Home
                             </Link>
