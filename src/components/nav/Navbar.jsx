@@ -11,7 +11,9 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <div className="navbar-container">
-            <div className="nav-left">Izzy-Dev</div>
+            <div className="nav-left">
+                Izzy-Dev
+            </div>
             <div className="nav-right nav-large">
                 <ul>
                     <li>

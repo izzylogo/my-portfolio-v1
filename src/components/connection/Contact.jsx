@@ -10,7 +10,7 @@ const Contact = () => {
           <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible.</p>
         </div>
         <div className="contact-form">
-          <form>
+          <form method='POST' action='https://getform.io/f/8c64d716-ebfa-444d-bc06-b32b8d6adfe5'>
             <div className="send-det">
               <div className="name am">
                 <label htmlFor="name">Your Name</label>
@@ -25,15 +25,15 @@ const Contact = () => {
               <label htmlFor="message">Your Message</label>
               <textarea name="message" id="message" cols="10" placeholder='Enter Your Message'></textarea>
             </div>
+            <button className="send">
+              Deliver Message
+              <div className="arrow">
+                <div className="lin1 lin bent"></div>
+                <div className="lin2 lin"></div>
+                <div className="lin3 lin bent"></div>
+              </div>
+            </button>
           </form>
-          <div className="send">
-            Deliver Message
-            <div className="arrow">
-              <div className="lin1 lin bent"></div>
-              <div className="lin2 lin"></div>
-              <div className="lin3 lin bent"></div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

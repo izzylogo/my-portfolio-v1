@@ -42,7 +42,7 @@ input, textarea{
     border: none;
     border-bottom: 2px solid #ccd6f6;
     outline: none;
-    color: #9de2d1;
+    color: #ccd6f6;
     font-size: 20px;
     margin: 0px auto;
 }
@@ -68,6 +68,7 @@ input, textarea{
     display: flex;
     gap: 18px;
     cursor: pointer;
+    letter-spacing: auto;
 }
 
 .arrow{
@@ -113,3 +114,15 @@ input, textarea{
     transform: translateX(-10px);
 }
 
+
+@media screen and (max-width: 500px) {
+    input, textarea{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact-form{
+        padding: 0px;
+    }
+}
