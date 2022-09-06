@@ -25,10 +25,15 @@
 
 .main-pro{
     height: auto;
-    position: relative;
+    /* position: relative; */
     /* z-index: -10; */
     overflow: hidden;
 }
+.main-pro:hover{
+    transform: translateY(-21px);
+    transition: .8s ease;
+}
+
 .main-pro img{
     overflow: hidden;
     width: 100%;

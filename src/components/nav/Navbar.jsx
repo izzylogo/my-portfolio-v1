@@ -11,9 +11,9 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <div className="navbar-container">
-            <div className="nav-left">
+            <Link to='home' smooth={true} className="nav-left">
                 Izzy-Dev
-            </div>
+            </Link>
             <div className="nav-right nav-large">
                 <ul>
                     <li>

@@ -21,6 +21,14 @@
     font-weight: 700;
 }
 
+.nav-large ul li{
+    transition: 1s ease;
+}
+
+.nav-large ul li:hover{
+    color: #81afdd;
+}
+
 .nav-right > ul {
     display: flex;
     gap: 20px;
