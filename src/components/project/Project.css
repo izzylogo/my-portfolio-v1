@@ -4,6 +4,9 @@
 }
 
 .project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 0px 50px;
 }
@@ -40,6 +43,19 @@
     /* height: 100%; */
     height: fit-content;
     border-radius: 10px;
+}
+
+.view-more{
+    border-radius: 10px;
+    background-color: #ccd6f6;
+    color: transparent;
+    color: #15395d;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 15px 20px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 /* .main-pro img::before,

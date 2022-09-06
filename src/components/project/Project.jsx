@@ -37,6 +37,7 @@ const Project = () => {
             <img src={gym} alt="gym app" />
           </a> 
         </div>
+        <a href="https://github.com/izzylogo" target='_blank' rel='noopener' className='view-more'>View More!</a>
       </div>
     </div>
   )
