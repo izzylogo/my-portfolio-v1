@@ -9,7 +9,7 @@ const Service = () => {
       <div className="service-container">
         <div className="service-left">
           <h1>The most creative <br /> intuitive and <br /> innovative teammate.</h1>
-          <img src={teamwork} />
+          <img src={teamwork} alt='teamwork' />
         </div>
         <div className="service-right">
           <div className="tab">

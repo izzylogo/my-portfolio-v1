@@ -1,20 +1,18 @@
-import { Navbar, Home, Service, About, Project, Contact } from './components'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Navbar, Home, Service, About, Project, Contact, Footer } from './components'
+import { BrowserRouter } from "react-router-dom";
 
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route></Route>
-        </Routes>
         <Navbar/>
         <Home />
         <About/>
         <Service/>
         <Project/>
         <Contact/>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

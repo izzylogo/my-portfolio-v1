@@ -14,7 +14,7 @@
     max-height: 1200px;
     gap: 20px;
     /* padding-top: -600px; */
-}
+} 
 
 .home-name h1{
     font-size: 60px;
@@ -43,6 +43,7 @@ p{
     display: flex;
     align-items: center;
     gap: 20px;
+    outline: none;
 }
 
 .goto{

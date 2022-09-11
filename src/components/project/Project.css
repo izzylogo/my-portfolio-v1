@@ -28,22 +28,25 @@
 
 .main-pro{
     height: auto;
-    /* position: relative; */
-    /* z-index: -10; */
+    /* position: absolute; */
     overflow: hidden;
+    transition: .8s ease;
 }
 .main-pro:hover{
-    transform: translateY(-21px);
-    transition: .8s ease;
+    transform: translateY(-21px) scale(1.1);
 }
 
 .main-pro img{
     overflow: hidden;
     width: 100%;
-    /* height: 100%; */
     height: fit-content;
     border-radius: 10px;
+    transition: .8s ease;
 }
+
+/* .main-pro img:hover{
+    transform: translateY(-21px);
+} */
 
 .view-more{
     border-radius: 10px;
@@ -56,7 +59,13 @@
     width: 200px;
     font-size: 20px;
     font-weight: 700;
+    transition: 1s ease;
 }
+
+/* .view-more:hover{
+    transform: translateY(-21px);
+    color: red;
+} */
 
 /* .main-pro img::before,
 .main-pro img::after{

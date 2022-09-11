@@ -28,6 +28,9 @@ body {
   color: rgba(255, 255, 255, 0.763);
 }
 
+button{
+  outline: none;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
