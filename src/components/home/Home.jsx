@@ -42,10 +42,10 @@ const pAni={
 const butAni={
   offscreen:{y: -100, opacity: 0},
   onscreen:{y: 0,
-    opacity: [0, 0.2, 0.5, 0.6, 1],
+    opacity: [0, 0.2, 0.5, 0.8, 1],
     transition: {type: 'spring',
     bounce: 0.2,
-    delay: 2.5,
+    delay: 2.8,
     duration: 2.5}
   }
 }

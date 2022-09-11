@@ -21,12 +21,12 @@ const mainAni={
 
 const knowAniL={
   offscreen:{x: -30,opacity: 0},
-  onscreen:{ x: 0,opacity: 1,  transition: { duration: 1, delay: 2, type: 'spring', bounce: 0.3}}
+  onscreen:{ x: 0,opacity: 1,  transition: { duration: 1, delay: 2.3, type: 'spring', bounce: 0.3}}
 }
 
 const skiAniR={
   offscreen:{x: 30,opacity: 0,},
-    onscreen:{ x: 0,opacity: 1, transition: { duration: 1, delay: 2, type: 'spring', bounce: 0.3}}
+    onscreen:{ x: 0,opacity: 1, transition: { duration: 1, delay: 2.35, type: 'spring', bounce: 0.3}}
 }
 
 const About = () => {
@@ -36,7 +36,7 @@ const About = () => {
         <motion.div className="about-head"
           initial={'offscreen'}
           whileInView={'onscreen'}
-          viewport={{once:true, amount:0.3}}
+          viewport={{once:true, amount:0.7}}
           transition={{staggerChildren:2}}
         >
           <motion.h1 className="a-in" variants={headAni}>About Me</motion.h1>
@@ -45,7 +45,7 @@ const About = () => {
         <motion.div className="about-main"
           initial={'offscreen'}
           whileInView={'onscreen'}
-          viewport={{once:true, amount:0.3}}
+          viewport={{once:true, amount:0.7}}
           transition={{staggerChildren:2}}
           variants={mainAni}
         >
