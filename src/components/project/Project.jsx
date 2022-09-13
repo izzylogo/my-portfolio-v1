@@ -38,26 +38,33 @@ const Project = () => {
           viewport={{once:true, amount:0.7}}
           transition={{staggerChildren:2}}
         >
-          <motion.a href='https://nftcollections.vercel.app/' target='_blank' rel='noreferrer' className="main-pro">
+          <motion.a variants={proSub} href='https://nftcollections.vercel.app/' target='_blank' rel='noreferrer' className="main-pro">
             <img src={nft} alt="nft collection dapp" />
           </motion.a>
-          <motion.a href='https://java-script-project-five.vercel.app/' target='_blank' rel='noreferrer' className="main-pro">
+          <motion.a variants={proSub} href='https://java-script-project-five.vercel.app/' target='_blank' rel='noreferrer' className="main-pro">
             <img src={tictac} alt="tic tac toe" />
           </motion.a>
-          <motion.a href='https://whitelist-dapp-0.vercel.app/' target='_blank' rel='noreferrer' className="main-pro">
+          <motion.a variants={proSub} href='https://whitelist-dapp-0.vercel.app/' target='_blank' rel='noreferrer' className="main-pro">
             <img src={whiteDapp} alt="whitelistDapp" />
           </motion.a>
-          <motion.a href='https://zuri-clone.vercel.app/train' target='_blank' rel='noreferrer'  className="main-pro">
+          <motion.a variants={proSub} href='https://zuri-clone.vercel.app/' target='_blank' rel='noreferrer'  className="main-pro">
             <img src={zuri} alt="zuri clone" />
           </motion.a>
-          <motion.a href='https://crypto-search-eta.vercel.app/' target='_blank' rel='noreferrer' className="main-pro">
+          <motion.a variants={proSub} href='https://crypto-search-eta.vercel.app/' target='_blank' rel='noreferrer' className="main-pro">
             <img src={crypto} alt="cypto search" />
           </motion.a>
-          <motion.a href='https://gym-api-sigma.vercel.app/' target='blank' rel='noreferrer' className="main-pro">
+          <motion.a variants={proSub} href='https://gym-api-sigma.vercel.app/' target='blank' rel='noreferrer' className="main-pro">
             <img src={gym} alt="gym app" />
           </motion.a> 
         </motion.div>
-        <a href="https://github.com/izzylogo" target='_blank' rel='noreferrer' className='view-more'>View More!</a>
+        <motion.a href="https://github.com/izzylogo" target='_blank' rel='noreferrer' className='view-more'
+          initial={{x: '-100vh',opacity: 0,display: 'none'}}
+          animate={{x: 0,opacity: [0, 0.2, 0.5, 1], display: 'block'}}
+          transition={{ duration: 1, delay: 0.7, bounce: 0.5 }}
+          viewport={{once: true, amount: 0.6}}
+        >
+          View More!
+        </motion.a>
       </div>
     </div>
   )

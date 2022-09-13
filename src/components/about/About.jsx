@@ -16,17 +16,17 @@ const subAni={
 
 const mainAni={
   offscreen:{y: -30,opacity: 0},
-  onscreen:{ y: 0,opacity: 1, transition: { duration: 1.5, delay: 1.5, type: 'spring'}}
+  onscreen:{ y: 0,opacity: 1, transition: { duration: 1.5, delay: 1, type: 'spring'}}
 }
 
 const knowAniL={
   offscreen:{x: -30,opacity: 0},
-  onscreen:{ x: 0,opacity: 1,  transition: { duration: 1, delay: 2.3, type: 'spring', bounce: 0.3}}
+  onscreen:{ x: 0,opacity: 1,  transition: { duration: 1, delay: 2, type: 'spring', bounce: 0.3}}
 }
 
 const skiAniR={
   offscreen:{x: 30,opacity: 0,},
-    onscreen:{ x: 0,opacity: 1, transition: { duration: 1, delay: 2.35, type: 'spring', bounce: 0.3}}
+    onscreen:{ x: 0,opacity: 1, transition: { duration: 1, delay: 2.15, type: 'spring', bounce: 0.3}}
 }
 
 const About = () => {
